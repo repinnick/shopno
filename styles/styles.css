@@ -1,0 +1,29 @@
+@import "fonts.css";
+
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1440px;
+    background-color: #eff0f2;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    font-family: Montserrat-Bold, sans-serif;
+    text-transform: uppercase;
+}
+.header__button {
+    font-family: Montserrat-Regular, sans-serif;
+}
