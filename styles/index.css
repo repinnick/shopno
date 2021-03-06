@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -9,28 +10,34 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
+
 .wrapper {
     margin: 0 auto;
 }
-.container {
+
+.wrapper .container {
     max-width: 1169px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/*HEADER*/
 .header_background {
     background-color: #eff0f2;
 }
 
 .header {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
-.header__text {
+.header .header__text {
     padding-top: 193px;
     text-align: center;
     font-size: 39px;
@@ -38,43 +45,32 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     text-transform: uppercase;
     color: #505050;
-    /*line-height: 1.6em;*/
-    /*letter-spacing: 0.01em;*/
     text-shadow: 9px 9px 10px rgba(0, 0, 0, 0.24);
 }
 
-.header__text span {
+.header .header__text span {
     background-color: #b2f2ee;
     padding: 0 10px;
 }
 
-.header__button{
+.header .header__button {
     padding-top: 139px;
     padding-bottom: 195px;
     text-align: center;
+    background-image: url("../img/glass.png");
+    background-repeat: no-repeat;
+    background-position: 92% 60%;
 }
 
-.header__button button {
+.header .header__button button {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     font-size: 18px;
     color: #3c3c3d;
     line-height: 48px;
     border: 2px solid #777879;
-    /*transition: 3s ease;*/
     padding: 0 51px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     border-radius: 2px;
 }
-
-.header__button{
-    background-image: url('../img/glass.png');
-    background-repeat: no-repeat;
-    background-position: 92% 60%;
-    /*text-align: right;*/
-    /*margin-bottom: 20px;*/
-}
-
-
-
