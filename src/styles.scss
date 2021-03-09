@@ -70,50 +70,86 @@ a {
   }
 }
 
-// .header {
-//   background-color: #eff0f2;
-//   &__content {
-//     display: flex;
-//     flex-direction: column;
-//   }
-//   &__logo {
-//     width: 113px;
-//     margin-bottom: 179px;
-//   }
-//   &__glass {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     margin-right: 80px;
-//     &-img {
-//       width: 90px;
-//     }
-//   }
-//   }
-// }
+.main {
+  &__title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 39px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323333;
+    margin-bottom: 6px;
+  }
+  &__title-p {
+    text-align: center;
+    font-style: "Merriweather", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #848585;
+    letter-spacing: 1.3px;
+  }
 
-// main {
-//   h2 {
-//     font-weight: 700;
-//     font-size: 39px;
-//     letter-spacing: 1px;
-//     text-transform: uppercase;
-//     color: #323333;
-//     line-height: 1.33;
-//   }
-//   .title-p {
-//     font-style: "Merriweather", sans-serif;
-//     font-weight: 400;
-//     font-size: 18px;
-//     text-transform: uppercase;
-//     color: #848585;
-//     letter-spacing: 1.7px;
-//   }
-// }
-// // about us
+  &__new-line {
+    margin: 30px 0 32px;
+  }
+
+  //ABOUT US
+  &__about-us {
+    background-color: #f8fafa;
+    padding: 123px 0 163px;
+    &_content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 145px;
+    }
+    &_img-block {
+      width: 46%;
+      display: flex;
+      justify-content: center;
+      &_image {
+        background-color: rgb(228, 229, 232);
+        box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
+      }
+    }
+    &_text {
+      width: 46%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &_title,
+      &_title2 {
+        font-family: "Merriweather", sans-serif;
+        text-transform: uppercase;
+        color: #646565;
+        letter-spacing: 1.4px;
+      }
+      &_title {
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 21px;
+      }
+      &_title2 {
+        font-size: 17px;
+        font-weight: 800;
+        margin-bottom: 16px;
+      }
+      &_description {
+        font-family: "Raleway", sans-serif;
+        text-transform: none;
+        color: rgba(0, 0, 0, 0.741);
+        line-height: 1.75;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.9px;
+      }
+    }
+  }
+}
+
 // .about-us {
-//   text-align: center;
-//   background-color: #f8fafa;
 
 //   .about_us__content {
 //     display: flex;

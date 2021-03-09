@@ -65,3 +65,83 @@ a {
     position: absolute;
     right: 84px;
     top: 517px; }
+
+.main__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323333;
+  margin-bottom: 6px; }
+
+.main__title-p {
+  text-align: center;
+  font-style: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #848585;
+  letter-spacing: 1.3px; }
+
+.main__new-line {
+  margin: 30px 0 32px; }
+
+.main__about-us {
+  background-color: #f8fafa;
+  padding: 123px 0 163px; }
+  .main__about-us_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 145px; }
+  .main__about-us_img-block {
+    width: 46%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .main__about-us_img-block_image {
+      background-color: #e4e5e8;
+      -webkit-box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
+      box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13); }
+  .main__about-us_text {
+    width: 46%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .main__about-us_text_title, .main__about-us_text_title2 {
+      font-family: "Merriweather", sans-serif;
+      text-transform: uppercase;
+      color: #646565;
+      letter-spacing: 1.4px; }
+    .main__about-us_text_title {
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 21px; }
+    .main__about-us_text_title2 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 16px; }
+    .main__about-us_text_description {
+      font-family: "Raleway", sans-serif;
+      text-transform: none;
+      color: rgba(0, 0, 0, 0.741);
+      line-height: 1.75;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.9px; }
