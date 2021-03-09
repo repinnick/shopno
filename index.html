@@ -1,49 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--    <link rel="stylesheet" href="styles/normalize.css">-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
-<!--    <link rel="stylesheet" href="styles/styles.css">-->
-
-    <title>SHOPNO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;700;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Shopno</title>
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="header_background">
-        <div class="container">
-            <header class="header">
-                <div class="header__logo">
-                    <img src="img/logo.png" alt="logo image">
+
+    <header class="header">
+        <div class="wrap">
+            <div class="header__content">
+                <img class="header__logo" src="img/logo.png" alt="site logo">
+                <h1 class="header__title">Say Hello to <span class="header__title-span">SHOPNO!</span></h1>
+                <h2 class="header__title"><span class="header__title-span">Agency</span> CORPORATE SHOPNO Theme</h2>
+                <div class="header__contact">
+                    <button class="header__contact-btn">contact us</button>
                 </div>
-
-                <section class="header__section">
-                    <div class="header__text">
-                        <h3>Say hello to <span>shopno!</span></h3>
-                        <h3><span>Agency</span> corporate Shopno theme</h3>
-                    </div>
-                    <div class="header__button">
-                        <button>Contact Us</button>
-                    </div>
-                    <!--                    <div class="header__image">-->
-                    <!--&lt;!&ndash;                        <img src="img/glass.png" alt="glass image">&ndash;&gt;-->
-                    <!--                    </div>-->
-                </section>
-            </header>
+                <div class="header__glass">
+                    <img class="header__glass-img" src="img/glass.png" alt="glass image">
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <main class="main"></main>
-    <footer class="footer"></footer>
-</div>
+    <main class="main">
 
+        <section class="main__about-us">
+            <div class="wrap">
+                <h2 class="main__title">ABOUT US</h2>
+                <p class="main__title-p">Lorem ipsum dolor sit amet event landing template</p>
+                <div class="main__about-us_content">
+                    <img src="img/about-us-image.png" alt="about us image">
+                    <div class="main__about-us_text">
+                        <h3>We Actually Do amazing works</h3>
+                        <p>A visual approach is an approach to a runway at an airport <br> conducted under instrument flight rules. The pilot must at <br> all times have either the airport or the preceding aircraft in <br> approach correct sight. conducted under instrument flight<br> rules. The pilot must at all times. <span>Preceding aircraft in approach correct sight. conducted <br> under instrument flight rules.</span></p>
+                        <h3>why we are the great?</h3>
+                        <p>A visual approach is an approach to a runway at an airport <br> conducted under instrument flight rules. <br>The preceding aircraft in approach correct sight.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <div class="wrap">
+                <h2 class="main__title">featured works</h2>
+                <p class="main__title-p">Lorem ipsum dolor sit amet event landing template</p>
+                <div class="works__content">
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <img src="img/works_pic1.png" alt="works image 1">
+                    <img src="img/works_pic2.png" alt="works image 2">
+                    <img src="img/works_pic3.png" alt="works image 3">
+                    <img src="img/works_pic4.png" alt="works image 4">
+                    <img src="img/works_pic5.png" alt="works image 5">
+                    <img src="img/works_pic6.png" alt="works image 6">
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="wrap">
+                <h2 class="main__title">small team</h2>
+                <p class="main__title-p">Lorem ipsum dolor sit amet event landing template</p>
+                <div class="team__content">
+                    <img src="img/team-pic1.png" alt="team image 1">
+                    <img src="img/team-pic2.png" alt="team image 2">
+                    <img src="img/team-pic3.png" alt="team image 3">
+                    <img src="img/team-pic4.png" alt="team image 4">
+                    <img src="img/team-pic5.png" alt="team image 5">
+                    <img src="img/team-pic6.png" alt="team image 6">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="wrap">
+                <h2>contact</h2>
+                <div class="contact__send">
+                    <form action="#" method="POST">
+                        <label for="name"></label>
+                        <input id="name" type="text" placeholder="Name*">
+                        <label for="subject"></label>
+                        <input id="subject" type="text" placeholder="Subject*">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email*">
+                        <label for="message"></label>
+                        <textarea id="message" placeholder="Message*"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+                <div class="contact__map">
+                    <p>Adress line 1</p> 
+                    <p>Adress line 2</p> 
+                    <p><a href="tel:+548945645">Phone: +548 945645</a></p>
+                    <p><a href="fax:+456.456.54546">Fax: +456456 54546</a></p>
+                    <p>Web: <a href="http://www.designagency.net/">www.designagency.net</a></p>
+                    <p>E-mail: <a href="mailto:info@designagency.net">info@designagency.net</a></p>
+                    <!-- place for map -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Follow Us</h2>
+        <div class="footer__links">
+            <ul>
+                <li><a href="">Font Awersome</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

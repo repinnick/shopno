@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #eff0f2;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 194px;
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 113px;
+    margin-bottom: 179px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 0.622;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+    color: #505050;
+    &-span {
+      background-color: #b2f2ee;
+      padding: 0 10px;
+    }
+  }
+  &__contact {
+    text-align: center;
+    margin-top: 153px;
+    &-btn {
+      text-transform: uppercase;
+      border: 3px solid #777879;
+      color: #3c3c3d;
+      background-color: transparent;
+      text-align: center;
+      letter-spacing: 1.7px;
+      font-weight: 500;
+      font-size: 18px;
+      padding: 14px 45px;
+      transition: 0.3s;
+      border-radius: 2px;
+      &:hover {
+        background-color: #6eeee4;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__glass {
+    &-img {
+      position: absolute;
+      right: 84px;
+      top: 517px;
+    }
+  }
+}
+
+// .header {
+//   background-color: #eff0f2;
+//   &__content {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   &__logo {
+//     width: 113px;
+//     margin-bottom: 179px;
+//   }
+//   &__glass {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     margin-right: 80px;
+//     &-img {
+//       width: 90px;
+//     }
+//   }
+//   }
+// }
+
+// main {
+//   h2 {
+//     font-weight: 700;
+//     font-size: 39px;
+//     letter-spacing: 1px;
+//     text-transform: uppercase;
+//     color: #323333;
+//     line-height: 1.33;
+//   }
+//   .title-p {
+//     font-style: "Merriweather", sans-serif;
+//     font-weight: 400;
+//     font-size: 18px;
+//     text-transform: uppercase;
+//     color: #848585;
+//     letter-spacing: 1.7px;
+//   }
+// }
+// // about us
+// .about-us {
+//   text-align: center;
+//   background-color: #f8fafa;
+
+//   .about_us__content {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     margin-top: 144px;
+//     img {
+//       background-color: rgb(228, 229, 232);
+//       box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
+//     }
+//     h3 {
+//       text-transform: uppercase;
+//       font-style: "Merriweather", serif;
+//       line-height: 1.4;
+//       font-size: 20px;
+//       font-weight: 700;
+//       color: #646565;
+//       line-height: 1.647;
+//     }
+//     .about-us__text {
+//       text-align: left;
+//       p {
+//         font-family: "Raleway", sans-serif;
+//         text-transform: none;
+//         color: rgba(0, 0, 0, 0.741);
+//         line-height: 1.75;
+//         font-size: 16px;
+//         font-weight: 400;
+//         span {
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // works
+// .works {
+//   text-align: center;
+//   .works__content {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: 122px;
+//     img {
+//       padding: 0 5px 10px;
+//     }
+//   }
+// }
