@@ -17,7 +17,7 @@ a {
   background-color: #eff0f2;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  padding-bottom: 194px;
+  padding: 64px 0 194px 0;
   &__content {
     position: relative;
     display: flex;
@@ -55,9 +55,11 @@ a {
       padding: 14px 45px;
       transition: 0.3s;
       border-radius: 2px;
+      cursor: pointer;
       &:hover {
         background-color: #6eeee4;
         transition: 0.3s;
+        color: white;
       }
     }
   }
@@ -147,54 +149,25 @@ a {
       }
     }
   }
+
+  //FEATURED WORKS
+  &__works {
+    padding: 121px 0 103px 0;
+    background-color: #ffffff;
+    &_content {
+      margin-top: 59px;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 15px;
+      row-gap: 10px;
+      justify-content: center;
+    }
+  }
+
+  //OUR TEAM
+  &__team {
+    padding: 107px 0 0 0;
+    background-color: #f9fbfb;
+  }
 }
-
-// .about-us {
-
-//   .about_us__content {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-//     margin-top: 144px;
-//     img {
-//       background-color: rgb(228, 229, 232);
-//       box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
-//     }
-//     h3 {
-//       text-transform: uppercase;
-//       font-style: "Merriweather", serif;
-//       line-height: 1.4;
-//       font-size: 20px;
-//       font-weight: 700;
-//       color: #646565;
-//       line-height: 1.647;
-//     }
-//     .about-us__text {
-//       text-align: left;
-//       p {
-//         font-family: "Raleway", sans-serif;
-//         text-transform: none;
-//         color: rgba(0, 0, 0, 0.741);
-//         line-height: 1.75;
-//         font-size: 16px;
-//         font-weight: 400;
-//         span {
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// // works
-// .works {
-//   text-align: center;
-//   .works__content {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-top: 122px;
-//     img {
-//       padding: 0 5px 10px;
-//     }
-//   }
-// }
