@@ -9,8 +9,9 @@ a {
 }
 
 .wrap {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -56,10 +57,16 @@ a {
       transition: 0.3s;
       border-radius: 2px;
       cursor: pointer;
+      outline: none;
       &:hover {
         background-color: #6eeee4;
         transition: 0.3s;
         color: white;
+      }
+      &:active {
+        background-color: rgb(228, 229, 232);
+        color: #214744;
+        transition: 0.5s;
       }
     }
   }
@@ -112,6 +119,8 @@ a {
       display: flex;
       justify-content: center;
       &_image {
+        max-width: 392px;
+        max-height: 483px;
         background-color: rgb(228, 229, 232);
         box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
       }
@@ -165,6 +174,7 @@ a {
       &-item-image {
         max-width: 370px;
         max-height: 359px;
+        cursor: pointer;
       }
     }
   }
@@ -182,6 +192,118 @@ a {
       &-item-image {
         max-width: 370px;
         max-height: 440px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  //CONTACT US
+  &__contact-us {
+    background: url("../img/contact-background.png") no-repeat center;
+    background-size: 100%;
+    opacity: 0.8;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 125px 0 120px 0;
+    color: #b3bbc0;
+    letter-spacing: 1px;
+    &_content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+    }
+    &_hiden {
+      display: none;
+    }
+    &_form,
+    &_map {
+      background-color: rgb(2, 22, 35);
+      opacity: 0.7;
+      box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
+    }
+    &_form {
+      display: flex;
+      flex-direction: column;
+      padding: 46px 35px 41px;
+      // max-width: 700px;
+      // width: 100%;
+      &_name,
+      &_subject,
+      &_email,
+      &_message {
+        outline: none;
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(204, 207, 209, 0.2);
+        color: #b3bbc0;
+        &::placeholder {
+          color: #b3bbc0;
+          letter-spacing: 0.9px;
+        }
+      }
+      &_subject,
+      &_email,
+      &_message {
+        margin-top: 29px;
+      }
+
+      &_name,
+      &_subject,
+      &_email {
+        padding-bottom: 13px;
+      }
+
+      &_message {
+        padding-bottom: 77px;
+      }
+      &_submit {
+        display: flex;
+        align-self: flex-start;
+        text-transform: uppercase;
+        padding: 15px 35px;
+        font-family: "Montserrat", serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #214744;
+        border: 1px solid #777879;
+        outline: none;
+        text-align: center;
+        letter-spacing: 1.7px;
+        border-radius: 2px;
+        background: #6eeee4;
+        margin-top: 36px;
+        color: #214744;
+        transition: 0.5s;
+        &:hover {
+          background-color: transparent;
+          color: white;
+          transition: 0.5s;
+        }
+        &:active {
+          background-color: rgb(228, 229, 232);
+          color: #214744;
+          transition: 0.5s;
+        }
+      }
+    }
+    &_map {
+      a {
+        outline: none;
+        text-decoration: none;
+        color: #b3bbc0;
+      }
+      padding: 34px 30px 41px;
+      font-size: 15px;
+      letter-spacing: 0;
+      &_address-line2,
+      &_address-phone,
+      &_address-fax,
+      &_address-email {
+        margin-top: 6.2px;
+      }
+      &_address-site {
+        margin-top: 32px;
       }
     }
   }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;700;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Shopno</title>
@@ -81,45 +81,43 @@
             </div>
         </section>
 
-        <section class="main__contacts">
+        <section class="main__contact-us">
             <div class="wrap">
-                <h2>contact</h2>
-                <div class="contact__send">
-                    <form action="#" method="POST">
-                        <label for="name"></label>
-                        <input id="name" type="text" placeholder="Name*">
-                        <label for="subject"></label>
-                        <input id="subject" type="text" placeholder="Subject*">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Email*">
-                        <label for="message"></label>
-                        <textarea id="message" placeholder="Message*"></textarea>
-                        <input type="submit" value="Send Message">
+                <h2 class="main__contact-us_hiden">contact</h2>
+                <div class="main__contact-us_content">
+                    <form class="main__contact-us_form" action="#" method="POST">
+                        <label class="main__contact-us_form_name-label" for="name"></label>
+                        <input class="main__contact-us_form_name" id="name" name="name" type="text" placeholder="Name*">
+                        <label class="main__contact-us_form_subject-label" for="subject"></label>
+                        <input class="main__contact-us_form_subject" name ="subject" id="subject" type="text" placeholder="Subject*">
+                        <label class="main__contact-us_form_email-label" for="email"></label>
+                        <input class="main__contact-us_form_email" type="email" id="email" name="email" placeholder="E-mail*">
+                        <label class="main__contact-us_form_message-label" for="message"></label>
+                        <textarea class="main__contact-us_form_message" name="message" id="message" placeholder="Message*"></textarea>
+                        <input class="main__contact-us_form_submit" type="submit" value="Send Message">
                     </form>
-                </div>
-                <div class="contact__map">
-                    <p>Adress line 1</p> 
-                    <p>Adress line 2</p> 
-                    <p><a href="tel:+548945645">Phone: +548 945645</a></p>
-                    <p><a href="fax:+456.456.54546">Fax: +456456 54546</a></p>
-                    <p>Web: <a href="http://www.designagency.net/">www.designagency.net</a></p>
-                    <p>E-mail: <a href="mailto:info@designagency.net">info@designagency.net</a></p>
-                    <!-- place for map -->
+                    <div class="main__contact-us_map">
+                        <p class="main__contact-us_map_address-line">Adress line 1</p> 
+                        <p class="main__contact-us_map_address-line2">Adress line 2</p> 
+                        <p class="main__contact-us_map_address-phone"><a class="main__contact-us_map_address-line-phone" href="tel:+548945645">Phone: +548 945645</a></p>
+                        <p class="main__contact-us_map_address-fax"><a class="main__contact-us_map_address-line-fax" href="fax:+456.456.54546">Fax: +456456 54546</a></p>
+                        <p class="main__contact-us_map_address-site">Web: <a class="main__contact-us_map_address-line-site" href="http://www.designagency.net/">www.designagency.net</a></p>
+                        <p class="main__contact-us_map_address-email">E-mail: <a class="main__contact-us_map_address-line-email" href="mailto:info@designagency.net">info@designagency.net</a></p>
+                        <!-- place for map -->
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <h2>Follow Us</h2>
-        <div class="footer__links">
-            <ul>
-                <li><a href="">Font Awersome</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+    <footer class="footer">
+        <h2 class="footer__title">Follow Us</h2>
+            <ul class="footer__links">
+                <li class="footer__links_item"><a class="footer__links_item-link" href="">Font Awersome</a></li>
+                <li class="footer__links_item"><a class="footer__links_item-link" href=""></a></li>
+                <li class="footer__links_item"><a class="footer__links_item-link" href=""></a></li>
+                <li class="footer__links_item"><a class="footer__links_item-link" href=""></a></li>
             </ul>
-        </div>
     </footer>
 
     <div class="modal hiden selector">
