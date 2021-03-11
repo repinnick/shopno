@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -96,20 +97,20 @@
                         <textarea class="main__contact-us_form_message" name="message" id="message" placeholder="Message*"></textarea>
                         <input class="main__contact-us_form_submit" type="submit" value="Send Message">
                     </form>
-                    <div class="main__contact-us_map">
-                        <p class="main__contact-us_map_address-line">Adress line 1</p> 
-                        <p class="main__contact-us_map_address-line2">Adress line 2</p> 
-                        <p class="main__contact-us_map_address-phone"><a class="main__contact-us_map_address-line-phone" href="tel:+548945645">Phone: +548 945645</a></p>
-                        <p class="main__contact-us_map_address-fax"><a class="main__contact-us_map_address-line-fax" href="fax:+456.456.54546">Fax: +456456 54546</a></p>
-                        <p class="main__contact-us_map_address-site">Web: <a class="main__contact-us_map_address-line-site" href="http://www.designagency.net/">www.designagency.net</a></p>
-                        <p class="main__contact-us_map_address-email">E-mail: <a class="main__contact-us_map_address-line-email" href="mailto:info@designagency.net">info@designagency.net</a></p>
-                        <!-- place for map -->
+                    <div class="main__contact-us_info">
+                        <p class="main__contact-us_info_address-line">Adress line 1</p> 
+                        <p class="main__contact-us_info_address-line2">Adress line 2</p> 
+                        <p class="main__contact-us_info_address-phone"><a class="main__contact-us_info_address-line-phone" href="tel:+548945645">Phone: +548 945645</a></p>
+                        <p class="main__contact-us_info_address-fax"><a class="main__contact-us_info_address-line-fax" href="fax:+456.456.54546">Fax: +456456 54546</a></p>
+                        <p class="main__contact-us_info_address-site">Web: <a class="main__contact-us_info_address-line-site" href="http://www.designagency.net/">www.designagency.net</a></p>
+                        <p class="main__contact-us_info_address-email">E-mail: <a class="main__contact-us_info_address-line-email" href="mailto:info@designagency.net">info@designagency.net</a></p>
+                        <div class="main__contact-us_map" id="map"></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+   
     <footer class="footer">
         <h2 class="footer__title">Follow Us</h2>
             <ul class="footer__links">
@@ -126,9 +127,9 @@
             <button class="modal__close-button">&times;</button>
         </div>
     </div>
-    <div class="modal__overlay hiden selector">
-    </div>
+    <div class="modal__overlay hiden selector"></div>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=daaac791-0b25-47a1-8894-4e5797585bd8&lang=ru_RU" type="text/javascript"></script>
     <script src="js/script.js"></script>
 </body>
 

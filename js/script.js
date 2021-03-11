@@ -1,3 +1,4 @@
+// Modal window
 const $images = document.querySelectorAll(".main__works_content-item-image");
 const $popup = document.querySelectorAll(".selector");
 const $popupImg = document.querySelector(".modal__image");
@@ -26,3 +27,12 @@ $images.forEach((image) => {
     $body.classList.add("hiden-scroll");
   });
 });
+
+// Yandex Map
+ymaps.ready(init);
+function init() {
+  let myMap = new ymaps.Map("map", {
+    center: [53.9, 27.56],
+    zoom: 12,
+  });
+}
