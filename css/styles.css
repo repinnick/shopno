@@ -195,7 +195,10 @@ a {
       cursor: pointer; }
 
 .main__contact-us {
-  background: url("../img/contact-background.png") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../img/contact-background.png") no-repeat center;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/contact-background.png") no-repeat center;
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/contact-background.png") no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/contact-background.png") no-repeat center;
   background-size: 100%;
   opacity: 0.8;
   font-family: "Raleway", sans-serif;
