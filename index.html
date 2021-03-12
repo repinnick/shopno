@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <script src="https://kit.fontawesome.com/b93013e06e.js" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=daaac791-0b25-47a1-8894-4e5797585bd8&lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Shopno</title>
 </head>
@@ -70,6 +71,7 @@
             <div class="wrap">
                 <h2 class="main__title">small team</h2>
                 <p class="main__title-p">Lorem ipsum dolor sit amet event landing template</p>
+                
                 <ul class="main__team_content">
                     <li class="main__team_content-item"><img class="main__team_content-item-image" src="img/team-pic1.png" alt="team image 1"></li>
                     <li class="main__team_content-item"><img class="main__team_content-item-image" src="img/team-pic2.png" alt="team image 2"></li>
@@ -83,9 +85,8 @@
 
         <section class="main__contact-us">
             <div class="wrap">
-                <a name="contact"></a>
                 <h2 class="main__contact-us_hiden">contact</h2>
-                <div class="main__contact-us_content">
+                <div class="main__contact-us_content" id="contact">
                     <form class="main__contact-us_form" action="#" method="POST">
                         <label class="main__contact-us_form_name-label" for="name"></label>
                         <input class="main__contact-us_form_name" id="name" name="name" type="text" placeholder="Name*">
@@ -125,13 +126,12 @@
 
     <div class="modal hiden selector">
         <div class="modal__container">
-            <img class="modal__image" src="" alt="full image">
+            <img class="modal__image" src="#" alt="full image">
             <button class="modal__close-button">&times;</button>
         </div>
     </div>
     <div class="modal__overlay hiden selector"></div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=daaac791-0b25-47a1-8894-4e5797585bd8&lang=ru_RU" type="text/javascript"></script>
     <script src="js/script.js"></script>
 </body>
 
