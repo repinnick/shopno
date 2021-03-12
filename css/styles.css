@@ -193,6 +193,43 @@ a {
       max-width: 370px;
       max-height: 440px;
       cursor: pointer; }
+    .main__team_content-text {
+      position: absolute;
+      display: block;
+      margin: 182px 18px 0;
+      background-color: #71f6ec;
+      width: 335px;
+      height: 241px;
+      -webkit-box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
+      box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
+      padding: 42px; }
+      .main__team_content-text-item {
+        outline: none;
+        text-decoration: none;
+        margin-right: 10px;
+        color: #214946;
+        font-size: 12px; }
+      .main__team_content-text-title {
+        font-family: "Merriweather", sans-serif;
+        margin-bottom: 19px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #767070;
+        letter-spacing: 1px;
+        font-style: italic; }
+        .main__team_content-text-title-span {
+          font-size: 20px;
+          font-weight: 700;
+          color: #272727;
+          text-transform: uppercase;
+          font-style: normal; }
+      .main__team_content-text-subtitle {
+        margin-bottom: 30px;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        color: #000;
+        letter-spacing: 0.3px;
+        line-height: 1.5; }
 
 .main__contact-us {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../img/contact-background.png") no-repeat center;

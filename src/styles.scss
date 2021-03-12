@@ -192,6 +192,48 @@ a {
         max-height: 440px;
         cursor: pointer;
       }
+
+      &-text {
+        position: absolute;
+        display: block;
+        margin: 182px 18px 0;
+        background-color: #71f6ec;
+        width: 335px;
+        height: 241px;
+        box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
+        padding: 42px;
+        &-item {
+          outline: none;
+          text-decoration: none;
+          margin-right: 10px;
+          color: #214946;
+          font-size: 12px;
+        }
+        &-title {
+          font-family: "Merriweather", sans-serif;
+          margin-bottom: 19px;
+          font-size: 15px;
+          font-weight: 400;
+          color: #767070;
+          letter-spacing: 1px;
+          font-style: italic;
+          &-span {
+            font-size: 20px;
+            font-weight: 700;
+            color: #272727;
+            text-transform: uppercase;
+            font-style: normal;
+          }
+        }
+        &-subtitle {
+          margin-bottom: 30px;
+          font-family: "Raleway", sans-serif;
+          font-size: 16px;
+          color: #000;
+          letter-spacing: 0.3px;
+          line-height: 1.5;
+        }
+      }
     }
   }
 
