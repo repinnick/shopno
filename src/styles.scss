@@ -283,175 +283,124 @@ a {
   }
 }
 
-
-.main {
-  //OUR TEAM
-  &__team {
-    &_content-wrapper {
-      
-      &-item-image {
-        
-      }
-    }
-
-    &_content {
-      
-      &-item-image {
-        
-        &:hover {
-          opacity: 0.5;
-        }
-      }
-      &:hover &-text {
-        opacity: 1;
-        
-      }
-      &-text {
-        
-
-        &::before {
-          
-        }
-        &-title {
-          
-          &-span {
-            
-          }
-        }
-        &-subtitle {
-          
-        }
-        &-item {
-        }
-      }
+.contact-us {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  ),
+  url("../img/contact-background.jpg") no-repeat center;
+  background-size: 100%;
+  opacity: 0.8;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 129px 0 123px 0;
+  color: #b3bbc0;
+  letter-spacing: 1px;
+  &__hiden {
+    display: none;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 613px 500px;
+    column-gap: 27px;
+  }
+  &__info, &__form {
+    background-color: rgb(2, 22, 35);
+    opacity: 0.9;
+    box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 46px 35px 41px;
+  }
+  &__name,
+  &__subject,
+  &__email,
+  &__message {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(204, 207, 209, 0.2);
+    color: #b3bbc0;
+    &::placeholder {
+      color: #b3bbc0;
+      letter-spacing: 0.9px;
     }
   }
+  &__subject,
+  &__email,
+  &__message {
+    margin-top: 29px;
+  }
 
-  //
+  &__name,
+  &__subject,
+  &__email {
+    padding-bottom: 13px;
+  }
 
-  //CONTACT US
-  &__contact-us {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0.6)
-      ),
-      url("../img/contact-background.jpg") no-repeat center;
-    background-size: 100%;
-    opacity: 0.8;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 129px 0 123px 0;
+  &__message {
+    padding-bottom: 77px;
+  }
+
+  &__submit {
+    display: flex;
+    align-self: flex-start;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #214744;
+    border: 1px solid #777879;
+    outline: none;
+    text-align: center;
+    letter-spacing: 1.7px;
+    border-radius: 2px;
+    background: #6eeee4;
+    margin-top: 36px;
+    color: #214744;
+    transition: 0.5s;
+    &:hover {
+      background-color: transparent;
+      color: white;
+      transition: 0.5s;
+    }
+    &:active {
+      background-color: rgb(228, 229, 232);
+      color: #214744;
+      transition: 0.5s;
+    }
+  }
+  &__info {
+    padding: 34px 30px 20px;
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+  &__link {
+    outline: none;
+    text-decoration: none;
     color: #b3bbc0;
-    letter-spacing: 1px;
-    &_content {
-      display: grid;
-      grid-template-columns: 613px 500px;
-      column-gap: 27px;
-    }
-    &_hiden {
-      display: none;
-    }
-    &_form,
-    &_info {
-      background-color: rgb(2, 22, 35);
-      opacity: 0.9;
-      box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
-    }
-    &_form {
-      display: flex;
-      flex-direction: column;
-      padding: 46px 35px 41px;
-      &_name,
-      &_subject,
-      &_email,
-      &_message {
-        outline: none;
-        border: 0;
-        background-color: transparent;
-        border-bottom: 1px solid rgba(204, 207, 209, 0.2);
-        color: #b3bbc0;
-        &::placeholder {
-          color: #b3bbc0;
-          letter-spacing: 0.9px;
-        }
-      }
-      &_subject,
-      &_email,
-      &_message {
-        margin-top: 29px;
-      }
+  }
 
-      &_name,
-      &_subject,
-      &_email {
-        padding-bottom: 13px;
-      }
-
-      &_message {
-        padding-bottom: 77px;
-      }
-      &_submit {
-        display: flex;
-        align-self: flex-start;
-        text-transform: uppercase;
-        padding: 15px 35px;
-        font-family: "Montserrat", serif;
-        font-size: 18px;
-        font-weight: 600;
-        color: #214744;
-        border: 1px solid #777879;
-        outline: none;
-        text-align: center;
-        letter-spacing: 1.7px;
-        border-radius: 2px;
-        background: #6eeee4;
-        margin-top: 36px;
-        color: #214744;
-        transition: 0.5s;
-        &:hover {
-          background-color: transparent;
-          color: white;
-          transition: 0.5s;
-        }
-        &:active {
-          background-color: rgb(228, 229, 232);
-          color: #214744;
-          transition: 0.5s;
-        }
-      }
-    }
-    &_info {
-      padding: 34px 30px 20px;
-      font-size: 15px;
-      letter-spacing: 0;
-      display: flex;
-      flex-direction: column;
-      a {
-        outline: none;
-        text-decoration: none;
-        color: #b3bbc0;
-      }
-      &_address-line2,
-      &_address-phone,
-      &_address-fax,
-      &_address-email {
-        margin-top: 6.2px;
-      }
-      &_address-site {
-        margin-top: 32px;
-      }
-    }
-    &_map {
-      width: 100%;
-      height: 224px;
-      margin-top: 24px;
-      opacity: 1;
-    }
+  &__address-line2,
+  &__address-phone,
+  &__fax,
+  &__email-info {
+    margin-top: 6.2px;
+  }
+  &__site {
+    margin-top: 32px;
+  }
+  &__map {
+    width: 100%;
+    height: 224px;
+    margin-top: 24px;
+    opacity: 1;
   }
 }
-
-// FOOTER
 
 .footer {
   display: flex;
@@ -459,10 +408,27 @@ a {
   justify-content: center;
   padding: 90px 0 152px;
   background-color: #262b2e;
-  a {
+  &__item {
     outline: none;
     color: white;
     border: none;
+    background-color: #3f4244;
+    width: 45px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-right: 8px;
+    }
+    &:hover {
+      background-color: #6eeee4;
+      color: black;
+      transition: 0.3s;
+    }
   }
   &__title {
     text-align: center;
@@ -478,25 +444,6 @@ a {
     justify-content: space-between;
     font-size: 21px;
     margin-top: 15px;
-    &_item {
-      background-color: #3f4244;
-      width: 45px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 0.3s;
-      &:first-child,
-      &:nth-child(2),
-      &:nth-child(3) {
-        margin-right: 8px;
-      }
-      &:hover {
-        background-color: #6eeee4;
-        color: black;
-        transition: 0.3s;
-      }
-    }
   }
 }
 
