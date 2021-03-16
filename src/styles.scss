@@ -184,97 +184,144 @@ a {
   }
 }
 
-
-
-.main {
-  //OUR TEAM
-  &__team {
-    padding: 105px 0 172px 0;
-    background-color: #f9fbfb;
-    &_content-wrapper {
+.team {
+  padding: 105px 0 172px 0;
+  background-color: #f9fbfb;
+  &__title {
+    @include block-title;
+  }
+  &__description {
+    @include block-description;
+  }
+  &__list {
       margin-top: 118px;
       list-style-type: none;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       row-gap: 10px;
       column-gap: 16px;
+  }
+  &__image {
+    position: relative;
+    max-width: 370px;
+    max-height: 440px;
+    max-width: 100%;
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    &:hover{
+      .team__image {
+        opacity: 0.5;
+      }
+      .team__info {
+        opacity: 1;
+        transition: 1s;
+      }
+    }
+  }
+  &__person-desc{
+    margin-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0.23px;
+    line-height: 1.5;
+  }
+  &__name {
+    font-family: "Merriweather", sans-serif;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #767070;
+    letter-spacing: 1px;
+    font-style: italic;
+  }
+  &__job {
+    font-size: 20px;
+    font-weight: 700;
+    color: #272727;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+  &__info {
+    max-width: 335px;
+    max-height: 241px;
+    box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
+    background-color: #6df6eb;
+    opacity: 0.98;
+    position: absolute;
+    left: 4.5%;
+    bottom: 5%;
+    text-align: left;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: left;
+    padding: 40px;
+    &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-bottom-color: #6df6eb;
+      position: absolute;
+      top: -36px;
+      left: 14px;
+    }
+  }
+  &__social-list {
+    list-style-type: none;
+    display: flex;
+  }
+  &__social-item {
+    outline: none;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #214946;
+    font-size: 12px;
+  }
+}
+
+
+.main {
+  //OUR TEAM
+  &__team {
+    &_content-wrapper {
+      
       &-item-image {
-        position: relative;
-        max-width: 370px;
-        max-height: 440px;
-        cursor: pointer;
+        
       }
     }
 
     &_content {
-      position: relative;
-      display: inline-block;
-      list-style-type: none;
+      
       &-item-image {
-        max-width: 100%;
+        
         &:hover {
           opacity: 0.5;
         }
       }
       &:hover &-text {
         opacity: 1;
-        transition: 0.5s;
+        
       }
       &-text {
-        max-width: 335px;
-        max-height: 241px;
-        box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
-        background-color: #6df6eb;
-        opacity: 0.98;
-        position: absolute;
-        left: 4.5%;
-        bottom: 5%;
-        text-align: left;
-        opacity: 0;
-        transition: 0.5s;
-        text-align: left;
-        padding: 40px;
+        
 
         &::before {
-          content: "";
-          width: 0;
-          height: 0;
-          border: 20px solid transparent;
-          border-bottom-color: #6df6eb;
-          position: absolute;
-          top: -36px;
-          left: 14px;
+          
         }
         &-title {
-          font-family: "Merriweather", sans-serif;
-          margin-bottom: 18px;
-          font-size: 15px;
-          font-weight: 400;
-          color: #767070;
-          letter-spacing: 1px;
-          font-style: italic;
+          
           &-span {
-            font-size: 20px;
-            font-weight: 700;
-            color: #272727;
-            text-transform: uppercase;
-            font-style: normal;
+            
           }
         }
         &-subtitle {
-          margin-bottom: 30px;
-          font-family: "Raleway", sans-serif;
-          font-size: 16px;
-          color: #000;
-          letter-spacing: 0.23px;
-          line-height: 1.5;
+          
         }
         &-item {
-          outline: none;
-          text-decoration: none;
-          margin-right: 10px;
-          color: #214946;
-          font-size: 12px;
         }
       }
     }

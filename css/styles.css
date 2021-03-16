@@ -196,10 +196,27 @@ a {
     max-height: 359px;
     cursor: pointer; }
 
-.main__team {
+.team {
   padding: 105px 0 172px 0;
   background-color: #f9fbfb; }
-  .main__team_content-wrapper {
+  .team__title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 39px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323333;
+    margin-bottom: 6px; }
+  .team__description {
+    text-align: center;
+    font-style: "Merriweather", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #848585;
+    letter-spacing: 1.3px; }
+  .team__list {
     margin-top: 118px;
     list-style-type: none;
     display: -ms-grid;
@@ -209,77 +226,86 @@ a {
     row-gap: 10px;
     -webkit-column-gap: 16px;
     column-gap: 16px; }
-    .main__team_content-wrapper-item-image {
-      position: relative;
-      max-width: 370px;
-      max-height: 440px;
-      cursor: pointer; }
-  .main__team_content {
+  .team__image {
+    position: relative;
+    max-width: 370px;
+    max-height: 440px;
+    max-width: 100%; }
+  .team__item {
     position: relative;
     display: inline-block;
     list-style-type: none; }
-    .main__team_content-item-image {
-      max-width: 100%; }
-      .main__team_content-item-image:hover {
-        opacity: 0.5; }
-    .main__team_content:hover .main__team_content-text {
+    .team__item:hover .team__image {
+      opacity: 0.5; }
+    .team__item:hover .team__info {
       opacity: 1;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
-    .main__team_content-text {
-      max-width: 335px;
-      max-height: 241px;
-      -webkit-box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
-      box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
-      background-color: #6df6eb;
-      opacity: 0.98;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+  .team__person-desc {
+    margin-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0.23px;
+    line-height: 1.5; }
+  .team__name {
+    font-family: "Merriweather", sans-serif;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #767070;
+    letter-spacing: 1px;
+    font-style: italic; }
+  .team__job {
+    font-size: 20px;
+    font-weight: 700;
+    color: #272727;
+    text-transform: uppercase;
+    font-style: normal; }
+  .team__info {
+    max-width: 335px;
+    max-height: 241px;
+    -webkit-box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
+    box-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
+    background-color: #6df6eb;
+    opacity: 0.98;
+    position: absolute;
+    left: 4.5%;
+    bottom: 5%;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    text-align: left;
+    padding: 40px; }
+    .team__info::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-bottom-color: #6df6eb;
       position: absolute;
-      left: 4.5%;
-      bottom: 5%;
-      text-align: left;
-      opacity: 0;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s;
-      text-align: left;
-      padding: 40px; }
-      .main__team_content-text::before {
-        content: "";
-        width: 0;
-        height: 0;
-        border: 20px solid transparent;
-        border-bottom-color: #6df6eb;
-        position: absolute;
-        top: -36px;
-        left: 14px; }
-      .main__team_content-text-title {
-        font-family: "Merriweather", sans-serif;
-        margin-bottom: 18px;
-        font-size: 15px;
-        font-weight: 400;
-        color: #767070;
-        letter-spacing: 1px;
-        font-style: italic; }
-        .main__team_content-text-title-span {
-          font-size: 20px;
-          font-weight: 700;
-          color: #272727;
-          text-transform: uppercase;
-          font-style: normal; }
-      .main__team_content-text-subtitle {
-        margin-bottom: 30px;
-        font-family: "Raleway", sans-serif;
-        font-size: 16px;
-        color: #000;
-        letter-spacing: 0.23px;
-        line-height: 1.5; }
-      .main__team_content-text-item {
-        outline: none;
-        text-decoration: none;
-        margin-right: 10px;
-        color: #214946;
-        font-size: 12px; }
+      top: -36px;
+      left: 14px; }
+  .team__social-list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .team__social-item {
+    outline: none;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #214946;
+    font-size: 12px; }
+
+.main__team_content-item-image:hover {
+  opacity: 0.5; }
+
+.main__team_content:hover .main__team_content-text {
+  opacity: 1; }
 
 .main__contact-us {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../img/contact-background.jpg") no-repeat center;
