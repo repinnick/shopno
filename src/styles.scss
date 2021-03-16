@@ -1,3 +1,24 @@
+@mixin block-title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 39px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323333;
+    margin-bottom: 6px;
+}
+
+@mixin block-description{
+    text-align: center;
+    font-style: "Merriweather", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #848585;
+    letter-spacing: 1.3px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +39,7 @@ a {
   background-color: #eff0f2;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  padding: 64px 0 213px 0;
+  padding: 64px 0 196px 0;
   &__content {
     position: relative;
     display: flex;
@@ -45,121 +66,106 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 155px;
-    &-btn {
-      display: block;
-      width: 230px;
-      text-transform: uppercase;
-      border: 2px solid #777879;
-      color: #3c3c3d;
-      background-color: transparent;
-      text-align: center;
-      letter-spacing: 1.7px;
-      font-weight: 500;
-      font-size: 18px;
-      padding: 15px 0;
+  }
+  &__button {
+    display: block;
+    width: 232px;
+    text-transform: uppercase;
+    border: 2px solid #777879;
+    color: #3c3c3d;
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 1.7px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 14px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      background-color: #6eeee4;
       transition: 0.3s;
-      border-radius: 2px;
-      cursor: pointer;
-      outline: none;
-      &:hover {
-        background-color: #6eeee4;
-        transition: 0.3s;
-        color: white;
-      }
-      &:active {
-        background-color: rgb(228, 229, 232);
-        color: #214744;
-        transition: 0.5s;
-      }
+      color: white;
+    }
+    &:active {
+      background-color: rgb(228, 229, 232);
+      color: #214744;
+      transition: 0.5s;
     }
   }
-  &__glass {
-    &-img {
-      position: absolute;
-      right: 84px;
-      top: 517px;
+  &__image {
+    position: absolute;
+    right: 84px;
+    top: 517px;
+  }
+}
+
+.about-us {
+  background-color: #f8fafa;
+  padding: 120px 0 163px;
+  &__title {
+    @include block-title;
+  }
+  &__description {
+    @include block-description;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 93px;
+    margin-top: 145px;
+  }
+  &__image-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    max-width: 392px;
+    max-height: 483px;
+    background-color: rgb(228, 229, 232);
+    box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__info-description {
+    font-family: "Raleway", sans-serif;
+    text-transform: none;
+    color: rgba(0, 0, 0, 0.741);
+    line-height: 1.75;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+  }
+  &__info-title {
+    font-family: "Merriweather", sans-serif;
+    text-transform: uppercase;
+    color: #646565;
+    letter-spacing: 1.4px;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 21px;
+    &--primary {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 16px;
     }
   }
 }
 
+
 .main {
-  &__title {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 39px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #323333;
-    margin-bottom: 6px;
-  }
-  &__title-p {
-    text-align: center;
-    font-style: "Merriweather", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #848585;
-    letter-spacing: 1.3px;
-  }
 
   &__new-line {
     margin: 30px 0 32px;
   }
 
   //ABOUT US
-  &__about-us {
-    background-color: #f8fafa;
-    padding: 120px 0 163px;
-    &_content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: space-between;
-      column-gap: 93px;
-      margin-top: 145px;
-    }
-    &_img-block {
-      display: flex;
-      justify-content: center;
-      &_image {
-        max-width: 392px;
-        max-height: 483px;
-        background-color: rgb(228, 229, 232);
-        box-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
-      }
-    }
-    &_text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      &_title,
-      &_title2 {
-        font-family: "Merriweather", sans-serif;
-        text-transform: uppercase;
-        color: #646565;
-        letter-spacing: 1.4px;
-      }
-      &_title {
-        font-weight: 800;
-        font-size: 20px;
-        margin-bottom: 21px;
-      }
-      &_title2 {
-        font-size: 17px;
-        font-weight: 800;
-        margin-bottom: 16px;
-      }
-      &_description {
-        font-family: "Raleway", sans-serif;
-        text-transform: none;
-        color: rgba(0, 0, 0, 0.741);
-        line-height: 1.75;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.9px;
-      }
-    }
-  }
+  
 
   //FEATURED WORKS
   &__works {
