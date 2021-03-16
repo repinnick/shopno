@@ -146,6 +146,8 @@ a {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.9px; }
+    .about-us__info-description--line {
+      margin: 30px 0 32px; }
   .about-us__info-title {
     font-family: "Merriweather", sans-serif;
     text-transform: uppercase;
@@ -159,14 +161,28 @@ a {
       font-weight: 800;
       margin-bottom: 16px; }
 
-.main__new-line {
-  margin: 30px 0 32px; }
-
-.main__works {
+.works {
   padding: 121px 0 103px 0;
   background-color: #ffffff; }
-  .main__works_content {
-    margin-top: 59px;
+  .works__title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 39px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323333;
+    margin-bottom: 6px; }
+  .works__description {
+    text-align: center;
+    font-style: "Merriweather", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #848585;
+    letter-spacing: 1.3px; }
+  .works__content {
+    margin-top: 116px;
     list-style-type: none;
     display: -ms-grid;
     display: grid;
@@ -174,11 +190,11 @@ a {
     grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: 15px;
     column-gap: 15px;
-    row-gap: 10px; }
-    .main__works_content-item-image {
-      max-width: 370px;
-      max-height: 359px;
-      cursor: pointer; }
+    row-gap: 11px; }
+  .works__item {
+    max-width: 370px;
+    max-height: 359px;
+    cursor: pointer; }
 
 .main__team {
   padding: 105px 0 172px 0;

@@ -140,6 +140,9 @@ a {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.9px;
+    &--line {
+      margin: 30px 0 32px;
+    }
   }
   &__info-title {
     font-family: "Merriweather", sans-serif;
@@ -157,34 +160,33 @@ a {
   }
 }
 
+.works {
+  padding: 121px 0 103px 0;
+  background-color: #ffffff;
+  &__title {
+    @include block-title;
+  }
+  &__description {
+    @include block-description;
+  }
+  &__content{
+    margin-top: 116px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 11px;
+  }
+  &__item {
+    max-width: 370px;
+    max-height: 359px;
+    cursor: pointer;
+  }
+}
+
+
 
 .main {
-
-  &__new-line {
-    margin: 30px 0 32px;
-  }
-
-  //ABOUT US
-  
-
-  //FEATURED WORKS
-  &__works {
-    padding: 121px 0 103px 0;
-    background-color: #ffffff;
-    &_content {
-      margin-top: 59px;
-      list-style-type: none;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 15px;
-      row-gap: 10px;
-      &-item-image {
-        max-width: 370px;
-        max-height: 359px;
-        cursor: pointer;
-      }
-    }
-  }
   //OUR TEAM
   &__team {
     padding: 105px 0 172px 0;
