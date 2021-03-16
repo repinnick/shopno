@@ -41,9 +41,16 @@ a {
       background-color: #b2f2ee;
       padding: 0 10px; }
   .header__contact {
-    text-align: center;
-    margin-top: 170px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 155px; }
     .header__contact-btn {
+      display: block;
+      width: 230px;
       text-transform: uppercase;
       border: 2px solid #777879;
       color: #3c3c3d;
@@ -52,7 +59,7 @@ a {
       letter-spacing: 1.7px;
       font-weight: 500;
       font-size: 18px;
-      padding: 14px 45px;
+      padding: 15px 0;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s;

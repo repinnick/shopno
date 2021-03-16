@@ -42,9 +42,12 @@ a {
     }
   }
   &__contact {
-    text-align: center;
-    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+    margin-top: 155px;
     &-btn {
+      display: block;
+      width: 230px;
       text-transform: uppercase;
       border: 2px solid #777879;
       color: #3c3c3d;
@@ -53,7 +56,7 @@ a {
       letter-spacing: 1.7px;
       font-weight: 500;
       font-size: 18px;
-      padding: 14px 45px;
+      padding: 15px 0;
       transition: 0.3s;
       border-radius: 2px;
       cursor: pointer;
