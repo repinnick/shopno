@@ -404,9 +404,13 @@ a {
     outline: none;
     text-decoration: none;
     color: #b3bbc0; }
-  .contact-us__address-line2, .contact-us__address-phone, .contact-us__fax, .contact-us__email-info {
-    margin-top: 6.2px; }
-  .contact-us__site {
+  .contact-us__address, .contact-us__connect {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 6.5px; }
+  .contact-us__connect {
     margin-top: 32px; }
   .contact-us__map {
     width: 100%;

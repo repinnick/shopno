@@ -384,14 +384,12 @@ a {
     text-decoration: none;
     color: #b3bbc0;
   }
-
-  &__address-line2,
-  &__address-phone,
-  &__fax,
-  &__email-info {
-    margin-top: 6.2px;
+  &__address, &__connect {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 6.5px;
   }
-  &__site {
+  &__connect {
     margin-top: 32px;
   }
   &__map {

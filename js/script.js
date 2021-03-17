@@ -1,5 +1,5 @@
 // Modal window
-const $images = document.querySelectorAll(".main__works_content-item-image");
+const $images = document.querySelectorAll(".works__image");
 const $popup = document.querySelectorAll(".selector");
 const $popupImg = document.querySelector(".modal__image");
 const $closeButton = document.querySelector(".modal__close-button");
