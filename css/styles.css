@@ -526,30 +526,37 @@ a {
 
 @media screen and (min-width: 800px) and (max-width: 1205px) {
   .header__title {
-    font-size: 30px; }
-  .main__about-us_content {
+    font-size: 40px;
+    line-height: 40px; }
+  .about-us__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 50px; }
-  .main__about-us_text {
+    row-gap: 50px;
+    justify-items: center; }
+  .about-us__info {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
-  .main__works_content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center; }
-  .main__team_content-wrapper {
+    align-items: center;
+    max-width: 680px; }
+  .about-us__info-title {
+    font-size: 24px; }
+  .about-us__info-description {
+    font-size: 22px; }
+  .works__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     justify-items: center; }
-  .main__contact-us_content {
+  .team__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; }
+  .contact-us__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 780px;
@@ -565,40 +572,41 @@ a {
   .modal__close-button {
     width: 100%; }
   .header__title {
-    font-size: 15px; }
-  .main__about-us_content {
+    font-size: 36px;
+    line-height: 40px; }
+  .header__image {
+    position: absolute;
+    right: 90px;
+    top: 700px; }
+  .about-us__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 50px; }
-  .main__about-us_text {
+    row-gap: 50px;
+    justify-items: center; }
+  .about-us__info {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
-    .main__about-us_text_title {
-      font-size: 18px; }
-    .main__about-us_text_title2 {
-      font-size: 15px; }
-    .main__about-us_text_description {
-      font-size: 16px; }
-  .main__title {
-    font-size: 30px; }
-  .main__title-p {
-    font-size: 14px; }
-  .main__works_content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    text-align: center; }
-  .main__team_content-wrapper {
+    align-items: center;
+    max-width: 500px; }
+  .about-us__info-title {
+    font-size: 22px; }
+  .about-us__info-description {
+    font-size: 20px; }
+  .works__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     justify-items: center; }
-  .main__contact-us_content {
+  .team__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .contact-us__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 410px;
@@ -616,58 +624,70 @@ a {
   .header__title {
     font-size: 20px;
     line-height: 30px; }
-  .header__glass-img {
+  .header__image {
     position: absolute;
     right: 84px;
     top: 600px; }
-  .main__title {
-    font-size: 25px; }
-  .main__title-p {
-    font-size: 12px; }
-  .main__about-us_content {
+  .about-us__title {
+    font-size: 30px; }
+  .about-us__description {
+    font-size: 14px; }
+  .about-us__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 50px; }
-  .main__about-us_text {
+    row-gap: 50px;
+    justify-items: center; }
+  .about-us__info {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
-    .main__about-us_text_title {
-      font-size: 13px; }
-    .main__about-us_text_title2 {
-      font-size: 12px; }
-    .main__about-us_text_description {
-      font-size: 9px; }
-  .main__about-us_img-block_image {
+    align-items: center;
+    max-width: 500px; }
+  .about-us__info-title {
+    font-size: 16px; }
+  .about-us__info-description {
+    font-size: 14px; }
+  .about-us__image {
     max-width: 260px;
     max-height: 320px; }
-  .main__works_content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    text-align: center; }
-    .main__works_content-item-image {
-      max-width: 260px;
-      max-height: 252px; }
-  .main__team_content-wrapper {
+  .works__title {
+    font-size: 30px; }
+  .works__description {
+    font-size: 14px; }
+  .works__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     justify-items: center; }
-  .main__team_content-item-image {
+  .works__image {
+    max-width: 260px;
+    max-height: 252px; }
+  .team__title {
+    font-size: 30px; }
+  .team__description {
+    font-size: 14px; }
+  .team__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .team__image {
     max-width: 260px;
     max-height: 309px; }
-  .main__team_content-text-title {
+  .team__info {
+    max-width: 238px;
+    max-height: 200px;
+    padding: 15px 10px; }
+  .team__name {
     font-size: 10px; }
-    .main__team_content-text-title-span {
-      font-size: 11px; }
-  .main__team_content-text-subtitle {
+  .team__job {
     font-size: 11px; }
-  .main__contact-us_content {
+  .team__person-desc {
+    font-size: 11px; }
+  .contact-us__content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 310px;
