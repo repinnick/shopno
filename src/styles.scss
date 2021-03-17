@@ -1,22 +1,22 @@
 @mixin block-title {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 39px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #323333;
-    margin-bottom: 6px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323333;
+  margin-bottom: 6px;
 }
 
-@mixin block-description{
-    text-align: center;
-    font-style: "Merriweather", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #848585;
-    letter-spacing: 1.3px;
+@mixin block-description {
+  text-align: center;
+  font-style: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #848585;
+  letter-spacing: 1.3px;
 }
 
 * {
@@ -169,7 +169,7 @@ a {
   &__description {
     @include block-description;
   }
-  &__content{
+  &__content {
     margin-top: 116px;
     list-style-type: none;
     display: grid;
@@ -194,12 +194,12 @@ a {
     @include block-description;
   }
   &__list {
-      margin-top: 118px;
-      list-style-type: none;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 10px;
-      column-gap: 16px;
+    margin-top: 118px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 16px;
   }
   &__image {
     position: relative;
@@ -211,7 +211,8 @@ a {
     position: relative;
     display: inline-block;
     list-style-type: none;
-    &:hover{
+    cursor: pointer;
+    &:hover {
       .team__image {
         opacity: 0.5;
       }
@@ -221,7 +222,7 @@ a {
       }
     }
   }
-  &__person-desc{
+  &__person-desc {
     margin-bottom: 30px;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
@@ -285,10 +286,10 @@ a {
 
 .contact-us {
   background: linear-gradient(
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.6)
-  ),
-  url("../img/contact-background.jpg") no-repeat center;
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("../img/contact-background.jpg") no-repeat center;
   background-size: 100%;
   opacity: 0.8;
   font-family: "Raleway", sans-serif;
@@ -305,7 +306,8 @@ a {
     grid-template-columns: 613px 500px;
     column-gap: 27px;
   }
-  &__info, &__form {
+  &__info,
+  &__form {
     background-color: rgb(2, 22, 35);
     opacity: 0.9;
     box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.12);
@@ -363,6 +365,7 @@ a {
     margin-top: 36px;
     color: #214744;
     transition: 0.5s;
+    cursor: pointer;
     &:hover {
       background-color: transparent;
       color: white;
@@ -384,7 +387,8 @@ a {
     text-decoration: none;
     color: #b3bbc0;
   }
-  &__address, &__connect {
+  &__address,
+  &__connect {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 6.5px;
@@ -505,12 +509,12 @@ a {
   .about-us {
     padding: 80px 0;
     &__content {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 50px;
-        justify-items: center;
-        margin-top: 60px;
-      }
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+      justify-items: center;
+      margin-top: 60px;
+    }
     &__info {
       align-items: center;
       max-width: 680px;
@@ -522,7 +526,7 @@ a {
       font-size: 22px;
     }
   }
-  
+
   .works {
     padding: 80px 0;
     &__content {
@@ -574,9 +578,9 @@ a {
       line-height: 40px;
     }
     &__image {
-        position: absolute;
-        right: 90px;
-        top: 600px;
+      position: absolute;
+      right: 90px;
+      top: 600px;
     }
     &__contact {
       margin-top: 70px;
@@ -586,12 +590,12 @@ a {
   .about-us {
     padding: 80px 0;
     &__content {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 50px;
-        justify-items: center;
-        margin-top: 60px;
-      }
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+      justify-items: center;
+      margin-top: 60px;
+    }
     &__info {
       align-items: center;
       max-width: 500px;
@@ -600,7 +604,7 @@ a {
       font-size: 22px;
     }
     &__info-description {
-      font-size:20px;
+      font-size: 20px;
     }
   }
 
@@ -654,7 +658,7 @@ a {
       font-size: 24px;
       line-height: 30px;
     }
-    &__image{
+    &__image {
       position: absolute;
       right: 84px;
       top: 500px;
@@ -673,12 +677,12 @@ a {
       font-size: 14px;
     }
     &__content {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 50px;
-        justify-items: center;
-        margin-top: 40px;
-      }
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+      justify-items: center;
+      margin-top: 40px;
+    }
     &__info {
       align-items: center;
       max-width: 500px;

@@ -234,7 +234,8 @@ a {
   .team__item {
     position: relative;
     display: inline-block;
-    list-style-type: none; }
+    list-style-type: none;
+    cursor: pointer; }
     .team__item:hover .team__image {
       opacity: 0.5; }
     .team__item:hover .team__info {
@@ -383,7 +384,8 @@ a {
     color: #214744;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    transition: 0.5s; }
+    transition: 0.5s;
+    cursor: pointer; }
     .contact-us__submit:hover {
       background-color: transparent;
       color: white;
