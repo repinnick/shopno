@@ -1,5 +1,5 @@
 ## Shopno
-<h3>Click <a href="https://repinnick-shopno.netlify.app/" target="_blank">here</a> to see the web version.</h3>
+<h3>Нажмите <a href="https://repinnick-shopno.netlify.app/" target="_blank">здесь</a>, чтобы увидеть веб-версию проекта.</h3>
 
 ### Задачи: 
 * сверстать PixelPerfect для ширины макета
